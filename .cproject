@@ -55,7 +55,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/STM32F4xx_Template/Source/System}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/STM32F4xx_Template/Source/FreeRTOS_conf}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/STM32F4xx_Template/Source/FreeRTOS_conf/ARM_CM4F}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/STM32F4xx_Template/STM32F4xx_StdPeriph_Lib/Libraries/STM32F4xx_FreeRTOS_PeriphDriver/serial}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/STM32F4xx_Template/STM32F4xx_StdPeriph_Lib/Libraries/STM32F4xx_FreeRTOS_PeriphDriver/serial/AsyncSerial}&quot;"/>
 								</option>
 								<inputType id="org.eclipse.cdt.cross.arm.gnu.sourcery.linux.cpp.compiler.base.input.1698256372" superClass="org.eclipse.cdt.cross.arm.gnu.sourcery.linux.cpp.compiler.base.input"/>
 							</tool>
