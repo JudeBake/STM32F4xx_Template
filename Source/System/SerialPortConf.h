@@ -1,17 +1,19 @@
 /*
- * SystemPeriphConf.h
+ * \file SerialPortConf.h
+ * \brief This file is used to configure the serial ports of the system.
  *
- *  Created on: May 2, 2013
- *      Author: julien
+ * Comment/uncomment the lines to configure the serial ports that will be used
+ * in the project.
+ *
+ * \date May 2, 2013
+ * \author julien
  */
 
-#ifndef SYSTEMPERIPHCONF_H_
-#define SYSTEMPERIPHCONF_H_
+#ifndef SERIALPORTCONF_H_
+#define SERIALPORTCONF_H_
 
-/*
- * Serial Port Config
- * Comment/uncomment the lines to configure the serial peripherics that will be
- * used in the project.
+/**
+ * \brief Defines used for asynchronous serial ports.
  */
 #define ASYNC_SERIAL_PORT1
 #define ASYNC_SERIAL_PORT2
@@ -53,4 +55,4 @@
 #include "AsyncSerialPort1.h"
 #endif
 
-#endif /* SYSTEMPERIPHCONF_H_ */
+#endif /* SERIALPORTCONF_H_ */
