@@ -1,8 +1,9 @@
-/*
- * stm32f4xx_USARTPinAss.h
+/**
+ * \file stm32f4xx_USARTPinAss.h
+ * \brief This file redefine the pin name used in serial ports.
  *
- *  Created on: May 1, 2013
- *      Author: julien
+ * \date May 1, 2013
+ * \author julien
  */
 
 #ifndef STM32F4XX_USARTPINASS_H_
