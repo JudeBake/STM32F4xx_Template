@@ -2,8 +2,12 @@
  * \file main.cpp
  * \brief This file is main of the project.
  *
- * \date Apr 12, 2013
- * \author julien
+ * \date	Created on: May 1, 2013
+ * \date	Last change on:
+ * \author	Created by: julien
+ * \author	Last change by:
+ *
+ * \version Revision:
  */
 
 #include <stdlib.h>

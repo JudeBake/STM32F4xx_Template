@@ -5,8 +5,12 @@
  * Comment/uncomment the lines to configure the serial ports that will be used
  * in the project.
  *
- * \date May 2, 2013
- * \author julien
+ * \date	Created on: May 1, 2013
+ * \date	Last change on:
+ * \author	Created by: julien
+ * \author	Last change by:
+ *
+ * \version Revision:
  */
 
 #ifndef SERIALPORTCONF_H_
