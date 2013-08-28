@@ -3,11 +3,11 @@
  * \brief This file is main of the project.
  *
  * \date	Created on: May 1, 2013
- * \date	Last change on:
+ * \date	Last change on: &DATE&
  * \author	Created by: julien
- * \author	Last change by:
+ * \author	Last change by: &AUTHOR&
  *
- * \version Revision:
+ * \version Commit Id: &REVISION&
  */
 
 #include <stdlib.h>
