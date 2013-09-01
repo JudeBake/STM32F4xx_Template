@@ -28,7 +28,7 @@
 		<link>
 			<name>FreeRTOS</name>
 			<type>2</type>
-			<locationURI>FREERTOS_LOC/Source</locationURI>
+			<locationURI>FREERTOS_LOC</locationURI>
 		</link>
 		<link>
 			<name>FreeRTOS_EC</name>
@@ -76,7 +76,7 @@
 		</variable>
 		<variable>
 			<name>FREERTOS_LOC</name>
-			<value>file:/home/julien/Embedded-Dev/FreeRTOS/FreeRTOSV7.4.0/FreeRTOS</value>
+			<value>file:/home/julien/Embedded-Dev/FreeRTOS/FreeRTOSV7.4.0/FreeRTOS/Source</value>
 		</variable>
 		<variable>
 			<name>OPENOCD_LOC</name>
