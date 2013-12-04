@@ -23,11 +23,14 @@ int main ()
 {
 	Uart1TestTask uart1Tester;
 
+	//init hardware
+	CFreeRTOS::InitHardwareForManagedTasks();
+
+	//create task
 	uart1Tester.Create("uart1Tester", configMINIMAL_STACK_SIZE,
-			tskIDLE_PRIORITY);
+			tskIDLE_PRIORITY + 1UL);
 
 	/* Start the scheduler. */
-	CFreeRTOS::InitHardwareForManagedTasks();
 	CFreeRTOS::StartScheduler();
 
 	return 0;
