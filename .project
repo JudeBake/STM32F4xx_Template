@@ -51,9 +51,14 @@
 			<location>/home/julien/Embedded-Dev/FreeRTOS/FreeRTOSV7.4.0/FreeRTOS/Source/portable/MemMang/heap_2.c</location>
 		</link>
 		<link>
+			<name>Source/System/startup_stm32f4xx.S</name>
+			<type>1</type>
+			<location>/home/julien/Embedded-Dev/STM32-Dev/StdPeriph_Lib/STM32F4xx_StdPeriph_Lib/Source/Libraries/CMSIS/CM4/DeviceSupport/ST/STM32F4xx/startup/gcc_FreeRTOS/startup_stm32f4xx.S</location>
+		</link>
+		<link>
 			<name>Source/System/stm32f407vg.ld</name>
 			<type>1</type>
-			<location>/home/julien/bareCortexM/bareCortexM/linker/stm32f407vg.ld</location>
+			<location>/home/julien/Embedded-Dev/STM32-Dev/linker_script/Linker_STM32Fxxx/stm32f407vg.ld</location>
 		</link>
 	</linkedResources>
 	<variableList>

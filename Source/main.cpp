@@ -12,23 +12,23 @@
 
 #include <stdlib.h>
 
-#include "CFreeRTOS.h"
+#include "FreeRTOS.h"
 
 #include "stm32f4xx_conf.h"
 #include "stm32f4xx.h"
 #include "SerialPortConf.h"
-#include "Uart1TestTask.h"
 
 int main ()
 {
-	Uart1TestTask uart1Tester;
+	AsyncSerialPort1* portInstance = AsyncSerialPort1::getInstance();
+	int8_t character;
+	int8_t string[100];
+	SerialStatus currentStatus;
 
-	uart1Tester.Create("uart1Tester", configMINIMAL_STACK_SIZE,
-			tskIDLE_PRIORITY + 1);
-
-	/* Start the scheduler. */
-	CFreeRTOS::InitHardwareForManagedTasks();
-	CFreeRTOS::StartScheduler();
+	currentStatus = portInstance->portInit(SERIAL_NO_PARITY, SERIAL_1_STOP_BIT,
+			SERIAL_8_BITS_DATA, SERIAL_NO_HW_FLOW_CTRL, SERIAL_SIMPLEX_RX,
+			SERIAL_9600_BAUD, SERIAL_PORT1_PREEMP_PRIORITY,
+			SERIAL_PORT1_SUBPRIORITY, SERIAL_INT_ENABLE);
 
 	return 0;
 }
