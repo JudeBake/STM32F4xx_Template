@@ -17,17 +17,17 @@
 #include "stm32f4xx_conf.h"
 #include "stm32f4xx.h"
 #include "SerialPortConf.h"
-#include "Uart1TestTask.h"
+#include "AsyncSerialPort1TestTask.h"
 
 int main ()
 {
-	Uart1TestTask uart1Tester;
+	AsyncSerialPort1TestTask asyncSerialPort1Tester;
 
 	//init hardware
 	CFreeRTOS::InitHardwareForManagedTasks();
 
 	//create task
-	uart1Tester.Create("uart1Tester", configMINIMAL_STACK_SIZE,
+	asyncSerialPort1Tester.Create("uart1Tester", configMINIMAL_STACK_SIZE,
 			tskIDLE_PRIORITY + 1UL);
 
 	/* Start the scheduler. */
