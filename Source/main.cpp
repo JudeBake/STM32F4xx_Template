@@ -17,10 +17,19 @@
 #include "stm32f4xx_conf.h"
 #include "stm32f4xx.h"
 #include "SerialPortConf.h"
+#include "SystemInitializer.h"
 #include "AsyncSerialPort1TestTask.h"
 
 int main ()
 {
+	/**
+	 * System Initialization
+	 */
+	SystemInitializer::InitializeSystem();
+
+	/*
+	 * Main Application
+	 */
 	AsyncSerialPort1TestTask asyncSerialPort1Tester;
 
 	//init hardware
