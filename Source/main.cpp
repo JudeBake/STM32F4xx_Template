@@ -30,7 +30,7 @@ int main ()
 	/*
 	 * Main Application
 	 */
-	AsyncSerialPort1TestTask asyncSerialPort1Tester;
+	static AsyncSerialPort1TestTask asyncSerialPort1Tester;
 
 	//init hardware
 	CFreeRTOS::InitHardwareForManagedTasks();
