@@ -1,28 +1,37 @@
 /*
- * main.cpp
+ * \file main.cpp
+ * \brief This file is main of the project.
  *
- *  Created on: Apr 12, 2013
- *      Author: julien
+ * \date	Created on: May 1, 2013
+ * \date	Last change on: &DATE&
+ * \author	Created by: julien
+ * \author	Last change by: &AUTHOR&
+ *
+ * \version Commit Id: &REVISION&
  */
 
 #include <stdlib.h>
 
-#include "FreeRTOS.h"
+#include "CFreeRTOS.h"
 
 #include "stm32f4xx_conf.h"
 #include "stm32f4xx.h"
+#include "SystemInitializer.h"
 
 int main ()
 {
-	int x = 1;
-	int y = 1;
-	int z = 0;
+	/*
+	 * System Initialization
+	 */
+	SystemInitializer::InitializeSystem();
 
-	while(1)
-	{
-		z = x+ y;
-		y++;
-		x = y - 1;
-	}
+	/*
+	 * Main Application
+	 */
+	//TODO: coding of the main app here
+
+	/* Start the scheduler. */
+	CFreeRTOS::StartScheduler();
+
 	return 0;
 }
