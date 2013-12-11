@@ -17,12 +17,12 @@
 #ifndef SERIALPORTCONF_H_
 #define SERIALPORTCONF_H_
 
-#define ASYNC_SERIAL_PORT1			/**< Use serial port 1 as asynchronous.*/
-#define ASYNC_SERIAL_PORT2			/**< Use serial port 2 as asynchronous.*/
+//#define ASYNC_SERIAL_PORT1			/**< Use serial port 1 as asynchronous.*/
+//#define ASYNC_SERIAL_PORT2			/**< Use serial port 2 as asynchronous.*/
 #define ASYNC_SERIAL_PORT3			/**< Use serial port 3 as asynchronous.*/
-#define ASYNC_SERIAL_PORT4			/**< Use serial port 4 as asynchronous.*/
-#define ASYNC_SERIAL_PORT5			/**< Use serial port 5 as asynchronous.*/
-#define ASYNC_SERIAL_PORT6			/**< Use serial port 6 as asynchronous.*/
+//#define ASYNC_SERIAL_PORT4			/**< Use serial port 4 as asynchronous.*/
+//#define ASYNC_SERIAL_PORT5			/**< Use serial port 5 as asynchronous.*/
+//#define ASYNC_SERIAL_PORT6			/**< Use serial port 6 as asynchronous.*/
 
 //#define SYNC_SERIAL_PORT1			/**< Used serial port 1 as synchronous.*/
 //#define SYNC_SERIAL_PORT2			/**< Used serial port 2 as synchronous.*/
@@ -353,6 +353,24 @@
 #include "AsyncSerialPort1.h"
 #endif
 
-//TODO: includes coresponding class for ports mode.
+#ifdef ASYNC_SERIAL_PORT2
+#include "AsyncSerialPort2.h"
+#endif
+
+#ifdef ASYNC_SERIAL_PORT3
+#include "AsyncSerialPort3.h"
+#endif
+
+#ifdef ASYNC_SERIAL_PORT4
+#include "AsyncSerialPort4.h"
+#endif
+
+#ifdef ASYNC_SERIAL_PORT5
+#include "AsyncSerialPort5.h"
+#endif
+
+#ifdef ASYNC_SERIAL_PORT6
+#include "AsyncSerialPort6.h"
+#endif
 
 #endif /* SERIALPORTCONF_H_ */

@@ -16,13 +16,11 @@
 
 #include "stm32f4xx_conf.h"
 #include "stm32f4xx.h"
-#include "SerialPortConf.h"
 #include "SystemInitializer.h"
-#include "AsyncSerialPort1TestTask.h"
 
 int main ()
 {
-	/**
+	/*
 	 * System Initialization
 	 */
 	SystemInitializer::InitializeSystem();
@@ -30,14 +28,7 @@ int main ()
 	/*
 	 * Main Application
 	 */
-	static AsyncSerialPort1TestTask asyncSerialPort1Tester;
-
-	//init hardware
-	CFreeRTOS::InitHardwareForManagedTasks();
-
-	//create task
-	asyncSerialPort1Tester.Create("uart1Tester", configMINIMAL_STACK_SIZE,
-			tskIDLE_PRIORITY + 1UL);
+	//TODO: coding of the main app here
 
 	/* Start the scheduler. */
 	CFreeRTOS::StartScheduler();
